@@ -1,0 +1,18 @@
+
+body{
+    background: #d2d3da;
+}
+.cards_container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #adaeb8;
+    border-radius: 5px;
+    padding: 15px;
+    background: #bdbec7;
+}
+
