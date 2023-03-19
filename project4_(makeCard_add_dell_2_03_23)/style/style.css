@@ -1,0 +1,26 @@
+/* body{
+    width: 980px;
+} */
+form{
+    display: flex;
+    justify-content: space-between;
+}
+.user_block{
+    width: 300px;
+    height: 240px;
+    margin: 100px 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.user_elem{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    padding: 35px 25px;
+
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
