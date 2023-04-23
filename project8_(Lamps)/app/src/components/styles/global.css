@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 70%;
+  margin: auto;
+  font-family: 'ABeeZee', sans-serif;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-icon:not(:last-child) {
+  margin-right: 55px;
+}
+.intro {
+  background-color: #4FBFA5;
+  padding: 25px 0 60px;
+}
+.intro-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-style: italic;
+}
+.nav-link:last-child {
+  background-color: #FFFFFF;
+  height: 40px;
+  color: black;
+  padding: 10px 25px;
+}
+.intro-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.intro-img {
+  width: 60%;
+}
+.intro-text {
+  width: 30%;
+}
+.intro-title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+}
+.intro-descr {
+  font-size: 14px;
+  font-style: italic;
+  margin: 40px 0;
+}
+.intro-btn {
+  padding: 15px 25px;
+  background-color: #00868A;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: white;
+  font-style: italic;
+}
+.offer {
+  padding: 80px 0;
+}
+.offer-wrapper h1 {
+  padding: 60px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+  color: #4FBFA5;
+}
+.offer-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.card {
+  margin: 5px ;
+  width: 23%;
+  /* aspect-ratio: 1/1.2; */
+  background-color: #00868A;
+  color: #FFFFFF; 
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-name {
+ display: flex;
+ font-family: 'ABeeZee';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  flex-grow: 1;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-name .batton {
+  border: 1px solid white;
+  padding: 4px 8px;
+  margin: 5px;
+}
+.footer-icons {
+  /* border: 1px solid #00868A; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 0;
+}
