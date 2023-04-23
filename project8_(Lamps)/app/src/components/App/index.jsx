@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Intro />
       <Offer />
-      <Footer />
       <Card />
+      <Footer />
     </div>
   );
 }

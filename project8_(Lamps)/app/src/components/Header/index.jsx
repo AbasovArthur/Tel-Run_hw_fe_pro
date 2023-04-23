@@ -1,15 +1,17 @@
 import React from 'react'
+import { logoSrc, headerIcons } from '../data/data'
+import s from './style.module.css'
 
-export default function Header() {
+export default function Header({ src }) {
     return (
         <header>
-            <div class="wrapper header-wrapper">
-                <img class="logo" src="./images/sone_1.svg" alt="" />
-                <div class="header-icons">
-                    <img class="header-icon" src="https://shorturl.at/moMU0" alt="vk" />
-                    <img class="header-icon" src="https://shorturl.at/ahoBD" alt="youtube" />
-                    <img class="header-icon" src="https://shorturl.at/sCR29" alt="facebook" />
-                    <img class="header-icon" src="https://shorturl.at/gtM03" alt="instagram" />
+            <div className={s.header_wrapper}>
+                <img className={s.logo} src={logoSrc.src} />
+                <div className={s.header_icons}>
+                    {
+                    headerIcons.map((icon, index) => (
+                        <img key={index} src={icon.src} alt={icon.alt} />))
+                    }
                 </div>
             </div>
         </header>

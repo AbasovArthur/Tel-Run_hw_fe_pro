@@ -1,31 +1,31 @@
-import React from 'react'
+import React from 'react';
+import { navLinks } from '../data/data';
 
 export default function Intro() {
     return (
         <div>
-            <div class="wrapper intro-wrapper">
-                <nav class="intro-nav">
-                    <a href="#" class="nav-link">Светильники</a>
-                    <a href="#" class="nav-link">Лампочки</a>
-                    <a href="#" class="nav-link">Декоративные</a>
-                    <a href="#" class="nav-link">Профессионаьные</a>
-                    <a href="#" class="nav-link">Контакты</a>
-                    <a href="tel: +380955555555" class="nav-link">Связаться</a>
+            <div>
+                <nav>
+                    {
+                        navLinks.map((link, index) => (
+                            <a key={index} href={link.href} className="nav-link">{link.text}</a>
+                        ))
+                    }
                 </nav>
-                <div class="intro-info">
-                    <div class="intro-text">
-                        <h1 class="intro-title">Светильники</h1>
-                        <p class="intro-descr">
+                <div>
+                    <div>
+                        <h1>Светильники</h1>
+                        <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas
                             temporibus pariatur numquam facere sequi adipisci rem, vel
                             obcaecati consectetur.
                         </p>
-                        <button class="intro-btn">Подробнее</button>
+                        <button>Подробнее</button>
                     </div>
                     <img
-                        src="https://www.indiajane.co.uk/pub/media/catalog/category/L128300-6.jpg"
+                        src="https://shorturl.at/ipO39"
                         alt=""
-                        class="intro-img"
+                        className="intro-img"
                     />
                 </div>
             </div>

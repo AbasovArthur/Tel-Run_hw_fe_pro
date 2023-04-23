@@ -1,14 +1,16 @@
 import React from 'react'
+import { footerIcons } from '../data/data';
 
 export default function Footer() {
     return (
         <footer>
-            <div class="footer-icons">
-                <img class="header-icon" src="https://shorturl.at/moMU0" alt="vk" />
-                <img class="header-icon" src="https://shorturl.at/ahoBD" alt="youtube" />
-                <img class="header-icon" src="https://shorturl.at/sCR29" alt="facebook" />
-                <img class="header-icon" src="https://shorturl.at/gtM03" alt="instagram" />
+            <div className="footer-icons">
+                {
+                    footerIcons.map((icon, index) => (
+                        <img key={index} src={icon.src} alt={icon.alt} />
+                    ))
+                }
             </div>
         </footer>
-    )
+    );
 }
